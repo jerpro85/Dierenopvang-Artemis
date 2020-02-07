@@ -1,0 +1,361 @@
+<html>
+  <head>
+    <script type="text/text/javascript" src="script.js"></script>
+  </head>
+  <nav>
+    <img id="logo" src="logo.png"/>
+    <div id="menuitems">
+      <a href=""><div class="menuitem">Home</div></a>
+      <a href=""><div class="menuitem active">Adotpie</div></a>
+      <a href=""><div class="menuitem">Contact</div></a>
+    </div>
+  </nav>
+  <body>
+    <div id="container">
+      <h1 style="margin-bottom: 10px;padding-top: 0;">Adoptatie</h1>
+      <hr/>
+      <h2 style="margin-top: 0;padding-top: 0;">Categoriën</h2>
+      <div id="category-items">
+        <div class="category-item">Hond</div>
+        <div class="category-item">Giraf</div>
+        <div class="category-item">Mens</div>
+      </div>
+      <div id="dieren">
+        <div class="dier-container">
+          <div class="title">Graantje</div><br/>
+          <img src="1.jpg"/><br/>
+          <div class="text50-1">Type</div><div class="text50-2">Giraf</div>
+          <div class="text50-1">Leeftijd</div><div class="text50-2">18 jaar</div>
+          <div class="text50-1">Prijs</div><div class="text50-2">5 euro</div>
+          <button class="adoptie-knop">Adopteren</button>
+        </div>
+        <div class="dier-splitter"><div class="line"></div></div>
+        <div class="dier-container">
+          <div class="title">Bob</div><br/>
+          <img src="2.jpg"/><br/>
+          <div class="text50-1">Type</div><div class="text50-2">Hond</div>
+          <div class="text50-1">Leeftijd</div><div class="text50-2">15 jaar</div>
+          <div class="text50-1">Prijs</div><div class="text50-2">99 euro</div>
+          <button class="adoptie-knop">Adopteren</button>
+        </div>
+        <div class="dier-splitter"><div class="line"></div></div>
+        <div class="dier-container">
+          <div class="title">Graantje</div><br/>
+          <img src="1.jpg"/><br/>
+          <div class="text50-1">Type</div><div class="text50-2">Giraf</div>
+          <div class="text50-1">Leeftijd</div><div class="text50-2">18 jaar</div>
+          <div class="text50-1">Prijs</div><div class="text50-2">5 euro</div>
+          <button class="adoptie-knop">Adopteren</button>
+        </div>
+        <div class="dier-splitter"><div class="line"></div></div>
+        <div class="dier-container">
+          <div class="title">Mazen</div><br/>
+          <img src="2.jpg"/><br/>
+          <div class="text50-1">Type</div><div class="text50-2">Mens</div>
+          <div class="text50-1">Leeftijd</div><div class="text50-2">26 jaar</div>
+          <div class="text50-1">Prijs</div><div class="text50-2">2 euro</div>
+          <button class="adoptie-knop">Adopteren</button>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+</html>
+
+
+<style>
+  body
+  {
+    margin: 0;
+    background: rgb(255, 255, 255);
+  }
+
+  #logo
+  {
+    width: 100px;
+    height: 100px;
+    float: left;
+  }
+
+  #menuitems
+  {
+    position: relative;
+    height: 60px;
+    float: left;
+    width: auto;
+  }
+
+  #menuitems a
+  {
+    text-decoration: none;
+    font-family: monospace;
+  }
+
+  .menuitem
+  {
+    position: relative;
+    color: white;
+    font-size: 16px;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    top: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: none;
+    border-radius: 4px;
+    transition: all 0.4s;
+  }
+
+  .menuitem:hover
+  {
+    color: #eebb55;
+    transition: all 0.4s;
+  }
+
+  .active
+  {
+    color: #eebb55;
+    font-size: 17px;
+    background:  white;
+  }
+
+  footer
+  {
+    position: relative;
+    width: 100%;
+    float: left;
+    height: 200px;
+    background: #5457a6;
+    margin-top: 50px;
+
+  }
+
+  .active:hover
+  {
+    cursor: default;
+  }
+  .adoptie-knop, .adoptie-knop2
+  {
+    background: #5457a6;
+    color: white;
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    transition: 0.7s;
+  }
+
+  .adoptie-knop2
+  {
+    background: #5457a6;
+
+  }
+
+  .dier-container img
+  {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+    left: 50%;
+    margin-left: -75px;
+    border-radius: 50%;
+    height: 150px;
+    box-shadow: 0px 0px 0px black;
+    border: 1px solid #fff;
+  }
+
+  h1, h2
+  {
+    font-family: monospace;
+    text-align: center;
+    color: #eebb55;
+
+  }
+
+  h2 {
+    color: rgb(150, 150, 150);
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 100;
+  }
+
+  .adoptie-knop2:hover, .adoptie-knop:hover
+  {
+    transition: 0.4s;
+    transform: scale(1.1);
+
+    cursor: pointer;
+  }
+
+  .text50-1, .text50-2
+  {
+    float: left;
+    width: 50%;
+    margin-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    color: #000;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+
+  .dier-container .title, .dier-container .title2
+  {
+    width: 100%;
+    position: relative;
+    font-size: 20px;
+    color: #5457a6;
+    text-align: center;
+    font-family: monospace;
+    border-radius: 50%;
+  }
+
+  .dier-container .title2
+  {
+    color: #5457a6;
+  }
+
+  .dier-container .text50-1
+  {
+    font-family: monospace;
+    text-align: left;
+  }
+
+  .dier-container .text50-2
+  {
+    font-family: monospace;
+    text-align: right;
+  }
+
+  nav {
+    position: absolute;
+    z-index: 10;
+    width: auto;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    border-top: 3px solid #eebb55;
+    height: 80px;
+    border-radius: 0px;
+    background: #5457a6;
+  }
+
+  #container
+  {
+    position: relative;
+    top: 80px;
+    height: auto;
+    float: left;
+    padding: 50px;
+    padding-bottom: 150px;
+  }
+
+  #dieren
+  {
+    position: relative;
+    background: rgb(230, 230, 230);
+    padding: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    border-radius: 10px;
+    height: auto;
+  }
+
+  hr
+  {
+    border-color: rgb(210, 210, 210);
+    background: #eebb55;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: none;
+    border-style: solid;
+    outline: none;
+    margin-right: 50px;
+    margin-left: 50px;
+    border-width: 1px;
+    border-bottom: none;
+    height: 0;
+  }
+
+
+
+  .dier-container
+  {
+    background: #fff;
+    position: relative;
+    width: 21.25%;
+    padding: 20px;
+    box-sizing: border-box;
+    height: auto;
+    float: left;
+    border-radius: 20px;
+    border: 2px solid #eebb55;
+    box-shadow: 0px 0px 0px #eebb55;
+    border-bottom: 5px solid #eebb55;
+    border-top: 5px solid #eebb55;
+    border: 0;
+    border-bottom: 3px solid #eebb55;
+    border-top: 0px solid #eebb55;
+  }
+
+  .dier-splitter
+  {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 5%;
+  }
+
+  .dier-splitter .line
+  {
+    top: 25%;
+    position: relative;
+    left: 50%;
+    background: #eebb55;
+    margin-left: -0.5px;
+    width: 0px;
+    height: 50%;
+
+  }
+
+  #category-items
+  {
+    position: relative;
+    float: left;
+    background: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+  }
+
+  .category-item
+  {
+    background: #5457a6;
+    color: white;
+    margin-right: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: monospace;
+    border-radius: 2px;
+    float: left;
+  }
+
+  .category-item:last-child
+  {
+    margin-right: 0px;
+  }
+
+
+
+
+</style>
