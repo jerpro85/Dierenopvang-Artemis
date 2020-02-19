@@ -1,63 +1,28 @@
 <html>
   <head>
-    <script type="text/text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <nav>
-    <img id="logo" src="logo.png"/>
     <div id="menuitems">
       <a href=""><div class="menuitem">Home</div></a>
-      <a href=""><div class="menuitem active">Adotpie</div></a>
+      <a href=""><div class="menuitem">Overview</div></a>
+      <a href=""><div class="menuitem">News</div></a>
+      <a href=""><div class="menuitem">Donate</div></a>
       <a href=""><div class="menuitem">Contact</div></a>
+      <a href=""><div class="menuitem">About Us</div></a>
     </div>
   </nav>
+  <div id="logo-layer"><img id="logo" src="logo.png"/></div>
   <body>
     <div id="container">
-      <h1 style="margin-bottom: 10px;padding-top: 0;">Adoptatie</h1>
-      <hr/>
-      <h2 style="margin-top: 0;padding-top: 0;">Categoriën</h2>
-      <div id="category-items">
-        <div class="category-item">Hond</div>
-        <div class="category-item">Giraf</div>
-        <div class="category-item">Mens</div>
+      <div id="filter">
+        <img src="nieuwe.png" id="nieuwe" alt="nieuwe">
+        <img src="dierenplaatjes.png" id="plaatjes" alt="nieuwe">
+        <img src="nieuws.png" id="nieuws" alt="nieuws">
+
       </div>
-      <div id="dieren">
-        <div class="dier-container">
-          <div class="title">Graantje</div><br/>
-          <img src="1.jpg"/><br/>
-          <div class="text50-1">Type</div><div class="text50-2">Giraf</div>
-          <div class="text50-1">Leeftijd</div><div class="text50-2">18 jaar</div>
-          <div class="text50-1">Prijs</div><div class="text50-2">5 euro</div>
-          <button class="adoptie-knop">Adopteren</button>
-        </div>
-        <div class="dier-splitter"><div class="line"></div></div>
-        <div class="dier-container">
-          <div class="title">Bob</div><br/>
-          <img src="2.jpg"/><br/>
-          <div class="text50-1">Type</div><div class="text50-2">Hond</div>
-          <div class="text50-1">Leeftijd</div><div class="text50-2">15 jaar</div>
-          <div class="text50-1">Prijs</div><div class="text50-2">99 euro</div>
-          <button class="adoptie-knop">Adopteren</button>
-        </div>
-        <div class="dier-splitter"><div class="line"></div></div>
-        <div class="dier-container">
-          <div class="title">Graantje</div><br/>
-          <img src="1.jpg"/><br/>
-          <div class="text50-1">Type</div><div class="text50-2">Giraf</div>
-          <div class="text50-1">Leeftijd</div><div class="text50-2">18 jaar</div>
-          <div class="text50-1">Prijs</div><div class="text50-2">5 euro</div>
-          <button class="adoptie-knop">Adopteren</button>
-        </div>
-        <div class="dier-splitter"><div class="line"></div></div>
-        <div class="dier-container">
-          <div class="title">Mazen</div><br/>
-          <img src="2.jpg"/><br/>
-          <div class="text50-1">Type</div><div class="text50-2">Mens</div>
-          <div class="text50-1">Leeftijd</div><div class="text50-2">26 jaar</div>
-          <div class="text50-1">Prijs</div><div class="text50-2">2 euro</div>
-          <button class="adoptie-knop">Adopteren</button>
-        </div>
       </div>
-    </div>
+   </div>
     <footer>
       <div class="middleline"></div>
       <div id="social-media">
@@ -78,6 +43,133 @@
     background: rgb(255, 255, 255);
   }
 
+  *
+  {
+    font-family: Helvetica, sans-serif;
+  }
+
+
+  #placetobe
+  {
+    color: #eebb55;
+    font-size: 50px;
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  #homeo
+  {
+    height: 100%;
+    width: 100%;
+    height: 300px;
+    width: 800px;
+  }
+
+  #homeo2
+  {
+    margin-top: 40px;
+    height: 100%;
+    width: 100%;
+    height: 500px;
+    width: 710px;
+  }
+  #homeo3
+  {
+    margin-top: 50px;
+    height: 100%;
+    width: 100%;
+    height: 400px;
+    width: 699px;
+  }
+
+
+  #gegevens
+  {
+    height: 100%;
+    width: 100%;
+    height: 300px;
+    width: 800px;
+  }
+  #formulier
+  {
+    height: 100%;
+    width: 100%;
+    height: 300px;
+    width: 800px;
+  }
+
+
+  #nieuws
+  {
+    margin-top: 70px;
+    height: 100%;
+    width: 100%;
+    height: 1200px;
+    width: 815px;
+  }
+
+  #plaatjes
+  {
+    margin-top: 70px;
+    height: 100%;
+    width: 100%;
+    height: 300px;
+    width: 800px;
+  }
+
+
+  #nieuwe
+  {
+    height: 100%;
+    width: 100%;
+    height: 300px;
+    width: 800px;
+  }
+
+  #filter-button
+  {
+    color: white;
+    background: #eebb55;
+    border: none;
+    margin-top: 60px;
+    height: 90px;
+    width: 100%;
+    box-sizing: border-box;
+
+    border: 1px solid black;
+  }
+
+  #aantal_resultaten
+  {
+    color: #eebb55;
+  }
+
+  .full-pg
+  {
+    float: left;
+    text-align: center;
+    font-weight: 900;
+    width: 100%;
+  }
+
+  p {
+    margin-bottom: 3px;
+  }
+
+  filter-block p {
+    font-weight: 900;
+  }
+
+  filter-block
+  {
+    position: relative;
+    display: block;
+    float: left;
+    width: 20%;
+    box-sizing: border-box;
+    margin-right: 10%;
+  }
+
   #logo
   {
     width: 100px;
@@ -85,35 +177,63 @@
     float: left;
   }
 
+  #filter {
+    position: relative;
+    height: auto;
+    width: 60%;
+    float: left;
+    margin-left: 20%;
+    background: none;
+    margin-bottom: 50px;
+  }
+
+  .dier-container .properties span
+  {
+    font-weight: 900;
+  }
+
+  #filter-leeftijd
+  {
+    border: 1px solid black;
+    height: 90px;
+    color: gray;
+    width: 100%;
+    font-size: 20px;
+    background: white;
+  }
+
   #menuitems
   {
-    position: relative;
-    height: 60px;
-    float: left;
-    width: auto;
+    height: 200px;
+    width: 100%;
+    display: inline-flex;
   }
 
   #menuitems a
   {
     text-decoration: none;
     font-family: monospace;
+    display: inline-block;
+    flex: 1 100%;
+    height: 200px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
   }
 
   .menuitem
   {
-    position: relative;
     color: white;
     font-size: 16px;
-    float: left;
-    padding-top: 10px;
-    padding-bottom: 10px;
     text-align: center;
-    top: 50%;
-    padding-left: 20px;
-    padding-right: 20px;
-    background: none;
-    border-radius: 4px;
-    transition: all 0.4s;
+    height: 200px;
+    line-height: 200px;
+
+    vertical-align: middle;
+  }
+
+  #menuitems:last-child
+  {
+    border-right: none;
   }
 
   .menuitem:hover
@@ -124,9 +244,7 @@
 
   .active
   {
-    color: #eebb55;
-    font-size: 17px;
-    background:  white;
+
   }
 
   footer
@@ -235,15 +353,29 @@
   .dier-container img
   {
     position: relative;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 150px;
-    left: 50%;
-    margin-left: -75px;
-    border-radius: 50%;
-    height: 150px;
+    width: 100%;
+    border-radius: 0%;
+    height: 100%;
     box-shadow: 0px 0px 0px black;
-    border: 1px solid #fff;
+  }
+
+  .dier-container .img-div
+  {
+    position: relative;
+    border-radius: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  @keyframes left
+  {
+    0% { transform-origin: 0% 50%; }
+    45% { transform: scale(2.0);}
+    49% { transform-origin: 0% 50%;}
+    50% { transform-origin: 50% 0%; transform: scale(1);}
+    95% { transform: scale(2.0);}
+    100% { transform: scale(1.0);}
   }
 
   h1, h2
@@ -265,7 +397,6 @@
   {
     transition: 0.4s;
     transform: scale(1.1);
-
     cursor: pointer;
   }
 
@@ -279,6 +410,22 @@
     color: #000;
     font-size: 15px;
     box-sizing: border-box;
+  }
+
+  #logo-layer
+  {
+    background: #5457a6;
+    width: 100%;
+    margin-top: 0px;
+    height: 60%;
+  }
+
+  #logo-layer img
+  {
+    height: 100%;
+    width: 35%;
+    margin-left: 32.5%;
+
   }
 
   .dier-container .title, .dier-container .title2
@@ -310,14 +457,13 @@
   }
 
   nav {
-    position: absolute;
+    position: relative;
     z-index: 10;
     width: auto;
     top: 0px;
     left: 0px;
     right: 0px;
-    border-top: 3px solid #eebb55;
-    height: 80px;
+    height: auto;
     border-radius: 0px;
     background: #5457a6;
   }
@@ -335,7 +481,7 @@
   #dieren
   {
     position: relative;
-    background: rgb(230, 230, 230);
+    background: transparent;
     padding: 50px;
     box-sizing: border-box;
     width: 100%;
@@ -367,18 +513,13 @@
     background: #fff;
     position: relative;
     width: 21.25%;
-    padding: 20px;
+    padding: 0px;
     box-sizing: border-box;
-    height: auto;
+    height: 400px;
     float: left;
-    border-radius: 20px;
-    border: 2px solid #eebb55;
+    border-radius: 0px;
+    border: 1px solid black;
     box-shadow: 0px 0px 0px #eebb55;
-    border-bottom: 5px solid #eebb55;
-    border-top: 5px solid #eebb55;
-    border: 0;
-    border-bottom: 3px solid #eebb55;
-    border-top: 0px solid #eebb55;
   }
 
   .dier-splitter
@@ -433,3 +574,4 @@
 
 
 </style>
+
