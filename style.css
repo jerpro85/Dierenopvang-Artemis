@@ -1,0 +1,104 @@
+
+
+
+.contactform{
+    height:auto; 
+    margin:0 auto;
+    background-color: #898989; 
+    padding: 33px
+}
+
+
+#lname, #fname{
+    background-color: #898989;
+    border: 1px solid #000000;
+    padding: 17px;
+}
+
+
+.inner{
+    width: 50%;
+    margin: 0 auto
+    
+}
+
+.inner h2 {
+    color: orange;
+    width: 45%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+#txtarea{
+    width: 81%; 
+    height: 16%; 
+    display: block; 
+    margin-bottom: 15px;
+    background-color: #898989;
+    border: 1px solid #000000;
+}
+
+.btns{
+    margin-top: 15px;
+}
+
+.btns input[type=submit], .btns button{
+    background: none;
+    border: 1px solid #000000;
+    padding: 17px;
+}
+
+.btns input[type=submit]{
+    width: 40%;
+    margin-right: 50px;
+}
+
+input[type=checkbox]:checked{
+    background-color: #898989;
+}
+
+.contactform input, .btns button{
+    color: #d5d2d2;
+}
+
+.blokcontainer > div i{
+    color: orange;
+    font-size: 32px;
+}
+
+.blokcontainer{
+    word-spacing: -1em; /* fix the inline block extra space issue */
+    letter-spacing: -1em; /* fix the inline block extra space issue */
+    overflow: hidden;
+    text-align: center;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin:0 auto;
+    box-sizing: border-box;
+}
+
+#w2,#w3,#w1{
+    box-sizing: border-box;
+    vertical-align: top;
+    word-spacing: normal; /* reset child */
+    letter-spacing: normal; /* reset child */
+    display: inline-block;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 5px 11px 0 rgba(0, 0, 0, 0.19);
+    width: 30%; /* the size UNDER the min-width in the media query*/
+    padding: 10px;
+    text-align: center;
+    height: 215px;
+    margin-bottom: 15px;
+    margin-left: 11px;
+}
+    
+.blokbody{
+    width: 60%;
+}
+
+.bloktitel, .bloka, .blokbody{
+    text-align: center;
+}
+

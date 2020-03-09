@@ -1,5 +1,7 @@
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="script.js"></script>
   </head>
   <nav>
@@ -13,14 +15,43 @@
   </nav>
   <div id="logo-layer"><img id="logo" src="logo.png"/></div>
   <body>
-    <div id="container">
-      <div id="filter">
-        <img src="contactgeg.png" id="gegevens" alt="gegevens">
-        <img src="contactfor.png" id="formulier" alt="formulier">
-
+    <div class="blokcontainer">
+      <div id="w1">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <h3 class="bloktitel">Bel Ons</h3>
+        <P class="blokbody">Telefonische ondersteuning is beschikbaar van 9 tot 5. Bel ons gerust!</P>
+        <a class="bloka" href="tel:555555555">555-555-555</a> 
       </div>
+      <div id="w3">
+        <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+        <h3 class="bloktitel">Email Ons</h3>
+        <P class="blokbody">Voor algemene vragen kunt u via email contact met ons opnemen</P>
+        <a class="bloka" href="mailto:mijnmail@mailservice.com">mijnmail@mailservice.com</a> 
       </div>
-   </div>
+      <div id="w2">
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        <h3 class="bloktitel">Bezoek ons</h3>
+        <P class="blokbody">Adres, postcode, plaats, provincie/staat</P>
+        <a class="bloka" href="#">Op kaart bekijken</a>
+      </div>
+    </div>
+    
+    <form action="" class="contactform">
+      <div class="inner">
+        <h2>Get in touch</h2>
+          <input type="text" id="fname" name="fname" value="Naam" style="width: 40%">
+          <input type="email" id="lname" name="lname" value="E-Mail" style="width: 40%"><br><br>
+          <textarea id="txtarea" name="txtarea"></textarea>
+          <input type="checkbox">
+           <label style="color: orange;">Email mij een kopie</label>
+           <input type="checkbox">
+           <label style="color: orange;">Ik ben een mens</label>
+           <div class="btns">
+            <input type="submit" value="Submit">
+            <button>Reset</button>
+         </div>
+    </div> 
+    </form>
     <footer>
       <div class="middleline"></div>
       <div id="social-media">
