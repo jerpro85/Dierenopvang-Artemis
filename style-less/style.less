@@ -1,0 +1,995 @@
+
+  /*responsive maken iPad Pro*/
+
+  body
+  {
+    margin: 0;
+    background: rgb(255, 255, 255);
+  }
+
+  *
+  {
+    font-family: Helvetica, sans-serif;
+  }
+
+
+  #placetobe
+  {
+    color: #eebb55;
+    font-size: 50px;
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  #homeo
+  {
+    height: 100%;
+    width: 100%;
+    height: 300px;
+    width: 800px;
+  }
+
+  #homeo2
+  {
+    margin-top: 40px;
+    height: 100%;
+    width: 100%;
+    height: 500px;
+    width: 710px;
+  }
+  #homeo3
+  {
+    margin-top: 50px;
+    height: 100%;
+    width: 100%;
+    height: 400px;
+    width: 699px;
+  }
+  #filter-button
+  {
+    color: white;
+    background: #eebb55;
+    border: none;
+    margin-top: 60px;
+    height: 90px;
+    width: 100%;
+    box-sizing: border-box;
+
+    border: 1px solid black;
+  }
+
+  #aantal_resultaten
+  {
+    color: #eebb55;
+  }
+
+  .full-pg
+  {
+    float: left;
+    text-align: center;
+    font-weight: 900;
+    width: 100%;
+  }
+
+  p {
+    margin-bottom: 3px;
+  }
+
+  filter-block p {
+    font-weight: 900;
+  }
+
+  filter-block
+  {
+    position: relative;
+    display: block;
+    float: left;
+    width: 20%;
+    box-sizing: border-box;
+    margin-right: 10%;
+  }
+
+  #logo
+  {
+    width: 100px;
+    height: 100px;
+    float: left;
+  }
+
+  #filter {
+    position: relative;
+    height: auto;
+    width: 60%;
+    float: left;
+    margin-left: 20%;
+    background: none;
+    margin-bottom: 50px;
+  }
+
+  .dier-container .properties span
+  {
+    font-weight: 900;
+  }
+
+  .filter-input
+  {
+    border: 1px solid black;
+    height: 90px;
+    color: gray;
+    width: 100%;
+    font-size: 20px;
+    background: white;
+  }
+
+  #menuitems
+  {
+    height: 200px;
+    width: 100%;
+    display: inline-flex;
+  }
+
+  #menuitems a
+  {
+    text-decoration: none;
+    font-family: monospace;
+    display: inline-block;
+    flex: 1 100%;
+    height: 200px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  .menuitem
+  {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    height: 200px;
+    line-height: 200px;
+
+    vertical-align: middle;
+  }
+
+  #menuitems:last-child
+  {
+    border-right: none;
+  }
+
+  .menuitem:hover
+  {
+    color: #eebb55;
+    transition: all 0.4s;
+  }
+
+  .active
+  {
+
+  }
+
+
+  footer
+  {
+    position: relative;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    height: 200px;
+    background: #5457a6;
+    margin-top: 50px;
+
+  }
+
+
+
+  footer #social-media
+  {
+    position: relative;
+    margin-left: 50%;
+    top: 40%;
+    transform: translateX(-50%) translateY(-50%);
+    background: #5457a6;
+    padding-right: 50px;
+    padding-left: 50px;
+    width: auto;
+    display: inline-block;
+    height: auto;
+  }
+
+  footer #social-media .item
+  {
+    border-radius: 50%;
+    background: white;
+    height: 80px;
+    width: 80px;
+    float: left;
+    margin-right: 50px;
+
+  }
+
+  footer #social-media .item:last-child
+  {
+    margin-right: 0px;
+  }
+
+  footer #social-media .item img
+  {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  footer .middleline
+  {
+    position: relative;
+    top: 60%;
+    float: left;
+    transform: translateY(-50%);
+    width: 100%;
+
+    background: white;
+    height: 1px;
+  }
+
+  footer #social-media .title
+  {
+    color: white;
+    font-family: courier;
+    margin-right: 0px;
+    font-size: 23px;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    font-weight: 100;
+    margin-bottom: 30px;
+  }
+
+  .active:hover
+  {
+    cursor: default;
+  }
+  .adoptie-knop, .adoptie-knop2
+  {
+    background: #5457a6;
+    color: white;
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    transition: 0.7s;
+  }
+
+  .adoptie-knop2
+  {
+    background: #5457a6;
+
+  }
+
+  .dier-container img
+  {
+    position: relative;
+    width: 100%;
+    border-radius: 0%;
+    height: 100%;
+    box-shadow: 0px 0px 0px black;
+  }
+
+  .dier-container .img-div
+  {
+    position: relative;
+    border-radius: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  @keyframes left
+  {
+    0% { transform-origin: 0% 50%; }
+    45% { transform: scale(2.0);}
+    49% { transform-origin: 0% 50%;}
+    50% { transform-origin: 50% 0%; transform: scale(1);}
+    95% { transform: scale(2.0);}
+    100% { transform: scale(1.0);}
+  }
+
+  h1, h2
+  {
+    font-family: monospace;
+    text-align: center;
+    color: #eebb55;
+
+  }
+
+  h2 {
+    color: rgb(150, 150, 150);
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 100;
+  }
+
+  .adoptie-knop2:hover, .adoptie-knop:hover
+  {
+    transition: 0.4s;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  .text50-1, .text50-2
+  {
+    float: left;
+    width: 50%;
+    margin-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    color: #000;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+
+  #logo-layer
+  {
+    background: #5457a6;
+    width: 100%;
+    margin-top: 0px;
+    height: 60%;
+  }
+
+  #logo-layer img
+  {
+    height: 100%;
+    width: 35%;
+    margin-left: 32.5%;
+
+  }
+
+  .dier-container .title, .dier-container .title2
+  {
+    width: 100%;
+    position: relative;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    font-family: monospace;
+    border-radius: 50%;
+  }
+
+  .dier-container .title2
+  {
+    color: #5457a6;
+  }
+
+  .dier-container .text50-1
+  {
+    font-family: monospace;
+    text-align: left;
+  }
+
+  .dier-container .text50-2
+  {
+    font-family: monospace;
+    text-align: right;
+  }
+
+  nav {
+    position: relative;
+    z-index: 10;
+    width: auto;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: auto;
+    border-radius: 0px;
+    background: #5457a6;
+  }
+
+  #container
+  {
+    position: relative;
+    top: 80px;
+    height: auto;
+    float: left;
+    padding: 50px;
+    padding-bottom: 150px;
+  }
+
+  #dieren, #dieren-holder
+  {
+    position: relative;
+    background: transparent;
+    padding: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    border-radius: 10px;
+    height: auto;
+  }
+
+  hr
+  {
+    border-color: rgb(210, 210, 210);
+    background: #eebb55;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: none;
+    border-style: solid;
+    outline: none;
+    margin-right: 50px;
+    margin-left: 50px;
+    border-width: 1px;
+    border-bottom: none;
+    height: 0;
+  }
+
+
+
+  .dier-container
+  {
+    background: #fff;
+    position: relative;
+    width: 21.25%;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 400px;
+    float: left;
+    border-radius: 0px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 0px #eebb55;
+  }
+
+  .dier-splitter
+  {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 5%;
+  }
+
+  .dier-splitter .line
+  {
+    top: 25%;
+    position: relative;
+    left: 50%;
+    background: #eebb55;
+    margin-left: -0.5px;
+    width: 0px;
+    height: 50%;
+
+  }
+
+  #category-items
+  {
+    position: relative;
+    float: left;
+    background: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+  }
+
+  .category-item
+  {
+    background: #5457a6;
+    color: white;
+    margin-right: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: monospace;
+    border-radius: 2px;
+    float: left;
+  }
+
+  .category-item:last-child
+  {
+    margin-right: 0px;
+  }
+
+
+.contactform{
+   height:auto;
+   margin:0 auto;
+   background-color: #898989;
+   padding: 33px
+}
+
+
+#lname, #fname{
+   background-color: #898989;
+   border: 1px solid #000000;
+   padding: 17px;
+}
+
+
+.inner{
+   width: 50%;
+   margin: 0 auto
+
+}
+
+.inner h2 {
+   color: orange;
+   width: 45%;
+   display: block;
+   margin: 0 auto;
+   margin-bottom: 15px;
+}
+
+#txtarea{
+   width: 81%;
+   height: 16%;
+   display: block;
+   margin-bottom: 15px;
+   background-color: #898989;
+   border: 1px solid #000000;
+}
+
+.btns{
+   margin-top: 15px;
+}
+
+.btns input[type=submit], .btns button{
+   background: none;
+   border: 1px solid #000000;
+   padding: 17px;
+}
+
+.btns input[type=submit]{
+   width: 40%;
+   margin-right: 50px;
+}
+
+input[type=checkbox]:checked{
+   background-color: #898989;
+}
+
+.contactform input, .btns button{
+   color: #d5d2d2;
+}
+
+.blokcontainer > div i{
+   color: orange;
+   font-size: 32px;
+}
+
+.blokcontainer{
+   word-spacing: -1em; /* fix the inline block extra space issue */
+   letter-spacing: -1em; /* fix the inline block extra space issue */
+   overflow: hidden;
+   text-align: center;
+   padding: 0 20px;
+   width: 100%;
+   max-width: 1200px;
+   margin:0 auto;
+   box-sizing: border-box;
+}
+
+#w2,#w3,#w1{
+   box-sizing: border-box;
+   vertical-align: top;
+   word-spacing: normal; /* reset child */
+   letter-spacing: normal; /* reset child */
+   display: inline-block;
+   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 5px 11px 0 rgba(0, 0, 0, 0.19);
+   width: 30%; /* the size UNDER the min-width in the media query*/
+   padding: 10px;
+   text-align: center;
+   height: 215px;
+   margin-bottom: 15px;
+   margin-left: 11px;
+}
+
+.blokbody{
+   width: 60%;
+}
+
+.bloktitel, .bloka, .blokbody{
+   text-align: center;
+}
+
+.section
+{
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background: white;
+}
+
+.sp-header
+{
+  color: #eebb55;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+
+}
+
+#donate-form input
+{
+  position: relative;
+  text-align: center;
+  color: white;
+  border: 1px solid black;
+  background: none;
+  height: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 30px;
+
+}
+
+#donate-form input::placeholder
+{
+  color: white;
+}
+
+.s1, .s2
+{
+  background: none;
+  height: 100%;
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.center
+{
+  position: relative;
+  top: 40%;
+  background: none;
+  transform: translateY(-50%);
+}
+
+
+
+#nieuws
+{
+  margin-top: 70px;
+  height: 100%;
+  width: 100%;
+  height: 1200px;
+  width: 815px;
+}
+
+#plaatjes
+{
+  margin-top: 70px;
+  height: 100%;
+  width: 100%;
+  height: 300px;
+  width: 800px;
+}
+
+
+#nieuwe
+{
+  height: 100%;
+  width: 100%;
+  height: 300px;
+  width: 800px;
+}
+
+@media only screen and (max-width: 1080px)
+{
+  #logo-layer
+  {
+    height: 30%;
+    background: #fff;
+    width: 100%;
+    overflow: hidden;
+    img
+    {
+      margin: 0px;
+      width: 100%;
+      height: 160%;
+    }
+  }
+
+  .menuitem
+  {
+    font-size: 40px;
+  }
+
+  footer
+  {
+    height: 220px;
+    #social-media
+    {
+      box-sizing: border-box;
+      top: 45%;
+      .title
+      {
+        margin-top: 0px;
+        font-size: 40px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  #dieren
+  {
+    text-align: center;
+    background: #f1e6d1;
+  }
+
+  #dieren-holder
+  {
+    margin-top: 50px;
+    padding: 0px;
+  }
+
+
+  #filter
+  {
+    width: auto;
+    margin-left: 0%;
+    text-align: center;
+  }
+
+  #homeo2, #homeo3
+  {
+    width: #homeo[width];
+  }
+
+  .section
+  {
+    height: 20%;
+    text-align: center;
+  }
+
+  #placetobe
+  {
+    color: #ffffff;
+  }
+
+  .section-little
+  {
+    background: #f1e6d1;
+    height: 10%;
+  }
+
+  filter-block
+  {
+    width: 17%;
+    .filter-input, #filter-button
+    {
+      height: 120px;
+    }
+    p,
+    {
+        font-size: 30px;
+    }
+  }
+
+  .blokbody, #w1, #w2, #w3
+  {
+    text-align: center;
+  }
+
+
+  #w1, #w2, #w3
+  {
+    width: 100%;
+    height: 20%;
+    padding-top: 30px;
+    box-shadow: none;
+    margin-left: 0px;
+    min-height: 500px;
+  }
+
+  #w2
+  {
+    border-bottom: none;
+  }
+
+  * {
+    font-size: 30px;
+  }
+
+
+
+  .blokcontainer, #txtarea, #fname, #lname
+  {
+    background: #ffffff;
+    > div i
+    {
+      font-size: 80px;
+    }
+  }
+
+  #fname, #lname
+  {
+    width: 50% - 0.6px;
+  }
+
+  .btns
+  {
+    input[type=submit], button
+    {
+      width: 100%;
+      background: orange;
+      color:white;
+      border: none;
+      height: 90px;
+    }
+
+    input[type=submit]
+    {
+      margin-bottom: 20px;
+    }
+  }
+
+  #txtarea
+  {
+    height: 40%;
+    width: 100%;
+  }
+
+  .blokcontainer
+  {
+    border: none;
+  }
+
+  .contactform
+  {
+    .inner
+    {
+      width: 80%;
+
+      label
+      {
+        color: #000000;
+        font-size: 40px;
+      }
+      h2
+      {
+        color: #000000;
+        font-size: 40px;
+        margin-bottom: 30px;
+      }
+
+      input[type='checkbox']
+      {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    background: #f1e6d1;
+  }
+
+  .full-pg
+  {
+      font-size: 30px;
+  }
+
+  .dier-container
+  {
+    width: 100%;
+    min-height: 1500px;
+    height: 70%;
+    padding: 50px;
+    border: none;
+    box-sizing: border-border-box;
+    img {
+      position: relative;
+      width: 100%;
+      border-radius: 0%;
+      height: 55%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      box-shadow: 0px 0px 0px black;
+    }
+
+    .title, .title2
+    {
+      font-size: 60px;
+    }
+
+    .text50-1, .text50-2
+    {
+      font-size: 40px;
+      margin-left: 0px;
+      margin-right: 0px;
+      padding: 0px;
+    }
+  }
+
+  .dier-splitter
+  {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 5%;
+    .line
+    {
+      top: 25%;
+      position: relative;
+      left: 50%;
+      background: #eebb55;
+      margin-left: -0.5px;
+      width: 0px;
+      height: 50%;
+    }
+  }
+
+  .blokbody{
+     width: 100%;
+     font-size: 40px;
+  }
+
+  .bloktitel
+  {
+    font-size: 40px;
+  }
+
+  .adoptie-knop, .adoptie-knop2
+  {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background: #5457a6;
+    color: white;
+    border: none;
+    outline: none;
+    height: 100px;
+    width: 100%;
+    font-size: 30px;
+    margin-left: 0%;
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    transition: 0.7s;
+  }
+
+  .adoptie-knop2
+  {
+    color: .adoptie-knop[background];
+    background: .adoptie-knop[color];
+  }
+
+  .center
+  {
+    top: 50%;
+    .sp-header
+    {
+      color: #ffffff;
+    }
+  }
+
+  body
+  {
+    background: #ed95ad;
+  }
+
+
+  #container
+  {
+    top: 0;
+    padding: 0px;
+    margin-top: 0px;
+    width: 100%;
+    height: auto;
+    min-height: 50%;
+    background: #f1e6d1;
+    box-sizing: border-box;
+  }
+
+  .secondary-solid
+  {
+    background: #f1e6d1;
+  }
+
+}
+
+
+.secondary-text
+{
+  color: #ffffff;
+}

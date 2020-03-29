@@ -1,5 +1,5 @@
  /*responsive maken iPad Pro*/
- @media screen and (min-device-width: 1024px) and (max-device-width: 1360px) { 
+ @media screen and (min-device-width: 1024px) and (max-device-width: 1360px) {
 
     #filter
     {
@@ -9,9 +9,9 @@
 
 
 .contactform{
-    height:auto; 
+    height:auto;
     margin:0 auto;
-    background-color: #898989; 
+    background-color: #898989;
     padding: 33px
 }
 
@@ -26,7 +26,7 @@
 .inner{
     width: 50%;
     margin: 0 auto
-    
+
 }
 
 .inner h2 {
@@ -38,9 +38,9 @@
 }
 
 #txtarea{
-    width: 81%; 
-    height: 16%; 
-    display: block; 
+    width: 81%;
+    height: 16%;
+    display: block;
     margin-bottom: 15px;
     background-color: #898989;
     border: 1px solid #000000;
@@ -100,7 +100,7 @@ input[type=checkbox]:checked{
     margin-bottom: 15px;
     margin-left: 11px;
 }
-    
+
 .blokbody{
     width: 60%;
 }
@@ -108,4 +108,3 @@ input[type=checkbox]:checked{
 .bloktitel, .bloka, .blokbody{
     text-align: center;
 }
-
